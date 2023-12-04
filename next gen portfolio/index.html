@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Kavin</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+      
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Kavin</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/web profile.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">kavin k</h1>
+        <p class="section__text__p2">  As The Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/kavin-kanagaraj-4bab7a277/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/wwwsoilddesign'"
+          />
+        </div>
+      </div>
+      
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/webimage.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>certificates</h3>
+              <p>2+ years <br />Frontend Development</p>
+              <br>
+              <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/certificationbykavin.png')"
+          >
+            Download CV
+          </button>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />
+              In computer Science</p>
+
+          </div>
+          <div class="text-container">
+            <p>
+              Greetings, aspiring web developer! Embarking on the journey of web development opens doors 
+              to a realm where creativity converges with technology, giving rise to the digital landscapes we navigate every day. 
+              n this dynamic domain, you'll delve into the intricacies of front-end development, where HTML, CSS, and JavaScript form the foundation of captivating user experiences. As you navigate the ever-evolving landscape, you'll discover the power of JavaScript frameworks like React, Angular, or Vue.js, empowering you to bring your ideas to life with efficiency and elegance
+              "<b>Get ready to embark on a journey of continuous learning."</b>
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"/>
+      
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">
+              programming _lang</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JAVA</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>"C"language</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PYTHON</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/wwwsoilddesign/wwwsoilddesign'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/wwwsoilddesign/loginpage'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./'"
+      />
+
+      <div class="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <br>
+                    <p> lorm ipos sit ream efvgf fgifrgn bhi kac fg.des fgfgdf dfd,
+                        tincidunt sit ram in quits and happp. </p>
+                        <a href="https://webdesigner.withgoogle.com/intl/en-GB/">Learn more</a>
+                    </p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+
+                    <h2>UI/Ux Design</h2>
+                    <br>
+                    <p> lorm ipos sit ream efvgf fgifrgn bhi kac fg.des fgfgdf dfd,
+                        tincidunt sit ram in quits and happp. </p>
+                        <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjuvJ6Mg_OCAxVspGYCHa97AOAYABAAGgJzbQ&ase=2&gclid=Cj0KCQiA67CrBhC1ARIsACKAa8QSRV2aQ9hhqDAjpzQIj9hKoYnnL_J3wbx9cCQKozirsp6emhrMg_0aAqf9EALw_wcB&ohost=www.google.com&cid=CAESVuD2_WSyDmG-fkXaYTlKBR9JC5MPOT2xIv6pG2WWAPgV9CajE65tRF76RPue5ofqpCgHrX4Iq6KcR85cshs0WKeiROmImRpYraIFSQ_zyjiT7GSNdBVl&sig=AOD64_1m9scG2-rbb3gCQb4koDmntksj5A&q&nis=4&adurl&ved=2ahUKEwiSkJaMg_OCAxWszzgGHdPkCAMQ0Qx6BAgLEAE">Learn more</a>
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>app Design</h2>
+                    <br>
+                    <p> lorm ipos sit ream efvgf fgifrgn bhi kac fg.des fgfgdf dfd,
+                        tincidunt sit ram in quits and happp. </p>
+                        <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjuvJ6Mg_OCAxVspGYCHa97AOAYABAAGgJzbQ&ase=2&gclid=Cj0KCQiA67CrBhC1ARIsACKAa8QSRV2aQ9hhqDAjpzQIj9hKoYnnL_J3wbx9cCQKozirsp6emhrMg_0aAqf9EALw_wcB&ohost=www.google.com&cid=CAESVuD2_WSyDmG-fkXaYTlKBR9JC5MPOT2xIv6pG2WWAPgV9CajE65tRF76RPue5ofqpCgHrX4Iq6KcR85cshs0WKeiROmImRpYraIFSQ_zyjiT7GSNdBVl&sig=AOD64_1m9scG2-rbb3gCQb4koDmntksj5A&q&nis=4&adurl&ved=2ahUKEwiSkJaMg_OCAxWszzgGHdPkCAMQ0Qx6BAgLEAE">Learn more</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="kavinkanagaraj16@gmail.com gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="//www.linkedin.com/in/kavin-kanagaraj-4bab7a277/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <!--------------------message---------------------->
+   
+   
+
+    
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="file:///G:/MY%20webpage/next%20gen%20portfolio/index.html">Home</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+      <hr>
+      <p>Copyright &#169; 2024-2025 kavin. All Rights Reserved
+      .</p>
+    </footer>
+    <script src="function.js"></script>
+  </body>
+</html>
